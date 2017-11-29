@@ -37,6 +37,12 @@ fill(random(255), random(255), random(255));
   for (var i = 0; i < 150; i++) {
     rect(random(width), 0, random(150), random(150));
   }
+
+  for (var i = 0; i < 300; i++) {
+    var r = random(255);
+    stroke(0);
+    line(random(width), 841, random(width), random(400-420));
+  }
 }
 
 
