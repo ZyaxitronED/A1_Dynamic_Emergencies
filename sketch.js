@@ -5,30 +5,37 @@
 //06_Exercise02 - Geometric Universe
 
 function setup() {
-  createCanvas(1000, 500);
-  strokeWeight(4);
+  createCanvas(841, 594);
+  //strokeWeight(4);
+  noStroke();
   noFill();
-  frameRate(60);
+  frameRate(3);
   //noLoop();
   textSize(120);
 }
 
 function draw() {
-  background(50);
+  background(0);
 
   //rotate(random(HALF_PI), random(HALF_PI), random(HALF_PI))
+  //rotate(PI/50);
 
-fill(random(255), random(255), random(255))
+//This 'fill' chooses 1 random colour for all of the shapes
+fill(random(255), random(255), random(255));
 
-  for (var i = 0; i < 300; i++) {
-    push()
-  	ellipse(random(width), random(height), random(150), random(150))
+  for (var i = 0; i < 150; i++) {
+    //push()
+  	ellipse(random(width), 275, random(150), random(150));
+//This 'fill' allows all of the shapes to have their own random colour
+//fill(random(255), random(255), random(255))
+  //  if(i<100){
+    //  rect(random(width), random(width), random(150), random(150))
+    //  pop()
+    //}
+  }
 
-fill(random(255), random(255), random(255))
-    if(i<100){
-      rect(random(width), random(width), random(150), random(150))
-      pop()
-    }
+  for (var i = 0; i < 150; i++) {
+    rect(random(width), 0, random(150), random(150));
   }
 }
 
