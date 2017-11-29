@@ -31,3 +31,11 @@ fill(random(255), random(255), random(255))
     }
   }
 }
+
+
+//https://experiments.withgoogle.com/chrome?tag=Generative
+//Project 1: http://weareinstrument.com/kaleidoscope/kaleid.html
+//Project 2: https://massmigrations.com/mon
+//Project 3: https://www.clicktorelease.com/code/polygon-shredder/
+//Project 4: http://edankwan.com/experiments/hyper-mix/
+//Project 5: 
