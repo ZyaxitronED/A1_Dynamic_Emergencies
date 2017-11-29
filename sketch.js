@@ -38,4 +38,4 @@ fill(random(255), random(255), random(255))
 //Project 2: https://massmigrations.com/mon
 //Project 3: https://www.clicktorelease.com/code/polygon-shredder/
 //Project 4: http://edankwan.com/experiments/hyper-mix/
-//Project 5: 
+//Project 5: http://projects.stroep.nl/mapgen-doodle/v3.html + http://blog.stroep.nl/2012/03/generative-canvas-is-fun-too/
