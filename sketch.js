@@ -25,7 +25,7 @@ fill(random(255), random(255), random(255));
 
   for (var i = 0; i < 150; i++) {
     //push()
-  	ellipse(random(width), 275, random(150), random(150));
+  	ellipse(random(width), 290, random(150), random(150));
 //This 'fill' allows all of the shapes to have their own random colour
 //fill(random(255), random(255), random(255))
   //  if(i<100){
@@ -36,6 +36,10 @@ fill(random(255), random(255), random(255));
 
   for (var i = 0; i < 150; i++) {
     rect(random(width), 0, random(150), random(150));
+  }
+
+  for (var i = 0; i < 150; i++) {
+    rect(random(width), 594, random(-150), random(-150));
   }
 
   for (var i = 0; i < 300; i++) {
