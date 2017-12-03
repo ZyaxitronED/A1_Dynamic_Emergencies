@@ -12,7 +12,7 @@ function setup() {
   //strokeWeight(4);
   noStroke();
   noFill();
-  frameRate(13);
+  frameRate(10);
   //noLoop();
 }
 //---------------------------
@@ -50,7 +50,7 @@ fill(random(255), random(255), random(255));
 //-----------------------------------------------------------
 
 //This section creates randomly generated lines at y=841
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 15; i++) {
     var r = random(255);
     stroke(0);
     line(random(width), 841, random(width), random(400-420));
