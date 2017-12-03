@@ -4,24 +4,25 @@
 //DAT405 / GAD405
 //06_Exercise02 - Geometric Universe
 
+//Define variables for the RGB
+let r = 255;
+let g = 255;
+let b = 255;
+
 function setup() {
   createCanvas(841, 594);
   //strokeWeight(4);
   noStroke();
   noFill();
-  frameRate(3);
+  frameRate(15);
   //noLoop();
   textSize(120);
 }
 
-var value = 0;
-
 function draw() {
 
-  background(0);
-
-  fill(value);
-  rect(0, 0, 841, 594);
+//The 'rgba' value means that the first three values determine the colour, and the final one adds certain transparency
+  background('rgba(0, 0, 0, 0)');
 
   //rotate(random(HALF_PI), random(HALF_PI), random(HALF_PI))
   //rotate(PI/50);
@@ -32,9 +33,6 @@ fill(random(255), random(255), random(255));
 //This section creates randomly generated circles at y=290
   for (var i = 0; i < 150; i++) {
   	ellipse(random(width), 290, random(150), random(150));
-
-//This 'fill' allows all of the shapes within this loop to have their own random colour
-//fill(random(255), random(255), random(255))
   }
 
 //This section creates randomly generated rectangles at y=0
@@ -48,20 +46,48 @@ fill(random(255), random(255), random(255));
   }
 
 //This section creates randomly generated lines at y=841
-  for (var i = 0; i < 300; i++) {
+  for (var i = 0; i < 200; i++) {
     var r = random(255);
     stroke(0);
     line(random(width), 841, random(width), random(400-420));
   }
+
+//Changes the RGB values when the mouse is pressed
+  if (mouseIsPressed) {
+    r = random(255);
+    g = random(255);
+    b = random(255);
+  }
+
+  //This section of code means that randomly generated circles will appear around the curson when it is on the canvas
+  noStroke();
+  fill(r, g, b);;
+  ellipse(mouseX, mouseY, random(150), random(150));
+  ellipse(mouseX, mouseY/2, random(150), random(150));
+  ellipse(mouseX - 25, mouseY, random(150), random(150));
+  ellipse(mouseX - 25, mouseY/2, random(150), random(150));
+  ellipse(mouseX + 25, mouseY, random(150), random(150));
+  ellipse(mouseX + 25, mouseY/2, random(150), random(150));
+  ellipse(mouseX - 50, mouseY, random(150), random(150));
+  ellipse(mouseX - 50, mouseY/2, random(150), random(150));
+  ellipse(mouseX + 50, mouseY, random(150), random(150));
+  ellipse(mouseX + 50, mouseY/2, random(150), random(150));
+
+  //This creates a random background colour
+  function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+ console.log(bgColor);
+
+    document.body.style.background = bgColor;
+    }
+
+random_bg_color();
+
 }
 
-function mousePressed() {
-  if (value == 0) {
-    value = random(255);
-  } else {
-    value = 0;
-  }
-}
 
 //https://experiments.withgoogle.com/chrome?tag=Generative
 //Project 1: http://weareinstrument.com/kaleidoscope/kaleid.html
