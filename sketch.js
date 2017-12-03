@@ -1,22 +1,18 @@
-//https://github.com/stavrosdidakis/DAT-GAD-405_2017
-//https://p5js.org
-
-//DAT405 / GAD405
-//06_Exercise02 - Geometric Universe
+//Assignment 1 ~ Dynamic Emergencies
 
 //Define variables for the RGB
 let r = 255;
 let g = 255;
 let b = 255;
 
+//Within this function is everything that will be ran once before the 'draw' function starts working
 function setup() {
   createCanvas(841, 594);
   //strokeWeight(4);
   noStroke();
   noFill();
-  frameRate(15);
+  frameRate(13);
   //noLoop();
-  textSize(120);
 }
 
 function draw() {
@@ -24,10 +20,11 @@ function draw() {
 //The 'rgba' value means that the first three values determine the colour, and the final one adds certain transparency
   background('rgba(0, 0, 0, 0)');
 
+//To enable any of these, remove the '//' before the code. These will enable certain rotations
   //rotate(random(HALF_PI), random(HALF_PI), random(HALF_PI))
   //rotate(PI/50);
 
-//This 'fill' chooses 1 random colour for all of the shapes
+//This 'fill' chooses 1 random colour for all of the shapes below it, unless specified otherwise
 fill(random(255), random(255), random(255));
 
 //This section creates randomly generated circles at y=290
@@ -73,7 +70,7 @@ fill(random(255), random(255), random(255));
   ellipse(mouseX + 50, mouseY, random(150), random(150));
   ellipse(mouseX + 50, mouseY/2, random(150), random(150));
 
-  //This creates a random background colour
+  //This creates a random background colour for each frame
   function random_bg_color() {
     var x = Math.floor(Math.random() * 256);
     var y = Math.floor(Math.random() * 256);
@@ -88,7 +85,7 @@ random_bg_color();
 
 }
 
-
+//Links to potential inspiration pieces:
 //https://experiments.withgoogle.com/chrome?tag=Generative
 //Project 1: http://weareinstrument.com/kaleidoscope/kaleid.html
 //Project 2: https://massmigrations.com/mon
