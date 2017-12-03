@@ -12,7 +12,7 @@ function setup() {
   //strokeWeight(4);
   noStroke();
   noFill();
-  frameRate(10);
+  frameRate(60);
   //noLoop();
 }
 //---------------------------
