@@ -69,15 +69,15 @@ fill(random(255), random(255), random(255));
   noStroke();
   fill(r, g, b);;
   ellipse(mouseX, 175, random(150), random(150));
-  ellipse(-mouseX, 440, random(150), random(150));
+  ellipse(mouseX, 440, random(150), random(150));
   ellipse(mouseX - 25, 175, random(150), random(150));
-  ellipse(-mouseX - 25, 440, random(150), random(150));
+  ellipse(mouseX - 25, 440, random(150), random(150));
   ellipse(mouseX + 25, 175, random(150), random(150));
-  ellipse(-mouseX + 25, 440, random(150), random(150));
+  ellipse(mouseX + 25, 440, random(150), random(150));
   ellipse(mouseX - 50, 175, random(150), random(150));
-  ellipse(-mouseX - 50, 440, random(150), random(150));
+  ellipse(mouseX - 50, 440, random(150), random(150));
   ellipse(mouseX + 50, 175, random(150), random(150));
-  ellipse(-mouseX + 50, 440, random(150), random(150));
+  ellipse(mouseX + 50, 440, random(150), random(150));
 //--------------------------------------------------------------
 
 //This creates a random background colour for each frame
