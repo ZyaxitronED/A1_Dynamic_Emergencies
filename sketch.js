@@ -68,16 +68,16 @@ fill(random(255), random(255), random(255));
 //This section of code means that randomly generated circles will appear around the curson when it is on the canvas
   noStroke();
   fill(r, g, b);;
-  ellipse(mouseX, mouseY, random(150), random(150));
-  ellipse(mouseX, mouseY/2, random(150), random(150));
-  ellipse(mouseX - 25, mouseY, random(150), random(150));
-  ellipse(mouseX - 25, mouseY/2, random(150), random(150));
-  ellipse(mouseX + 25, mouseY, random(150), random(150));
-  ellipse(mouseX + 25, mouseY/2, random(150), random(150));
-  ellipse(mouseX - 50, mouseY, random(150), random(150));
-  ellipse(mouseX - 50, mouseY/2, random(150), random(150));
-  ellipse(mouseX + 50, mouseY, random(150), random(150));
-  ellipse(mouseX + 50, mouseY/2, random(150), random(150));
+  ellipse(mouseX, 175, random(150), random(150));
+  ellipse(mouseX, 425, random(150), random(150));
+  ellipse(mouseX - 25, 175, random(150), random(150));
+  ellipse(mouseX - 25, 425, random(150), random(150));
+  ellipse(mouseX + 25, 175, random(150), random(150));
+  ellipse(mouseX + 25, 425, random(150), random(150));
+  ellipse(mouseX - 50, 175, random(150), random(150));
+  ellipse(mouseX - 50, 425, random(150), random(150));
+  ellipse(mouseX + 50, 175, random(150), random(150));
+  ellipse(mouseX + 50, 425, random(150), random(150));
 //--------------------------------------------------------------
 
 //This creates a random background colour for each frame
@@ -95,6 +95,7 @@ random_bg_color();
 //-----------------------------------------------------------
 
 }
+
 
 //Links to potential inspiration pieces:
 //https://experiments.withgoogle.com/chrome?tag=Generative
