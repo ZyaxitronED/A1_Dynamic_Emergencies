@@ -52,7 +52,7 @@ The “rgba” in this code stands for:
 r = red,
 g = green,
 b = blue,
-a = alpha,
+a = alpha
 
 Finally, I decided that the colours that were being generated were
 not as interesting as I could make it, so I looked into some options
