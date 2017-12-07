@@ -11,13 +11,13 @@ I had to do some research to find out the way that worked with the ‘if’
 statement.
 Shown by the image below:
 
-
+```
   if (mouseIsPressed) {
     r = random(255);
     g = random(255);
     b = random(255);
   }
-
+```
 
 I used this for the shapes that followed the cursor on the screen.
 Which was used by adding in 'mouseX' and 'mouseY' to the position
@@ -28,9 +28,9 @@ so I decided to add in a fading background. What this means is that
 the shapes remained in their original position for a while before
 fading into the background.
 In order to do this, the following code was used:
-
+```
 “background(‘rgba(0, 0, 0, 0.1)’);”
-
+```
 The “rgba” in this code stands for”
 r = red
 g = green
@@ -45,8 +45,8 @@ references on P5.js and decided to play around with the variables
 there.
 (https://p5js.org/reference/#/p5/blendMode )
 The following code was what I decided on:
-
+```
 “blendMode(DIFFERENCE);”
-
+```
 What the “DIFFERENCE” does is subtract colours from the underlying
 image, which looked more interesting than what it was previously.
