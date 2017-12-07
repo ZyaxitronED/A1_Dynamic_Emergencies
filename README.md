@@ -1,6 +1,6 @@
 # Dynamic-Emergencies
 
-The Development Process & Problems:
+##The Development Process & Problems:
 
 Since I had the inspiration from the previous projects, I had a good
 idea of what I wanted to create. However, I decided to play around with
@@ -9,7 +9,7 @@ Whilst testing, I ran into a few problems. For example, implementing
 random colour generation to an ‘if’ statement would not work for me.
 I had to do some research to find out the way that worked with the ‘if’
 statement.
-Shown by the image below:
+Shown by the code below:
 
 ```ruby
   if (mouseIsPressed) {
@@ -28,9 +28,9 @@ so I decided to add in a fading background. What this means is that
 the shapes remained in their original position for a while before
 fading into the background.
 In order to do this, the following code was used:
-```ruby
+`<
 “background(‘rgba(0, 0, 0, 0.1)’);”
-```
+>`
 The “rgba” in this code stands for”
 r = red
 g = green
