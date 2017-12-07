@@ -21,10 +21,11 @@ for (var i = 0; i < 150; i++) {
 The '290' value in the 'ellipse' tag is the Y axis and the position that the circles are allowed to be placed. The 'random(width)' value is placed in the X axis, meaning that they can be placed at any point from beginning to end on that axis.
 
 
-Whilst testing, I ran into a few problems. For example, implementing
-random colour generation to an ‘if’ statement would not work for me.
-I had to do some research to find out the way that worked with the ‘if’
-statement.
+Now that the shapes were behaving as I wanted them to, I decided to give them randomly generated colour to make it even more interesting to look at.
+
+On top of this, I decided to have a group of randomly generated circles following the cursor.
+These were also going to have randomly generated colours.
+However, whilst testing, I ran into a few problems. For example, implementing random colour generation to an ‘if’ statement would not work for me. I had to do some research to find out the way that worked with the ‘if’ statement.
 Shown by the code below:
 
 ```javascript
@@ -39,10 +40,8 @@ I used this for the shapes that followed the cursor on the screen.
 Which was used by adding in 'mouseX' and 'mouseY' to the position
 values, instead of static numbers.
 
-When testing how the shapes looked, they seemed to rather lacklustre,
-so I decided to add in a fading background. What this means is that
-the shapes remained in their original position for a while before
-fading into the background.
+When testing how the shapes that followed the cursor looked, they seemed to rather lacklustre, so I decided to add in a fading background. What this means is that the shapes remained in their original position for a while before fading into the background.
+The way that this works is that the background becomes transparent, leaving the previous frame there. As a result of the black background, the increasing amount of layers would mean that the shape that was there on a frame 5 seconds ago would seem like it is fading away. This is not the case. What is happening is the darkness is increasing over the shape, causing it to disappear.
 In order to do this, the following code was used:
 
 ```javascript
@@ -50,10 +49,10 @@ In order to do this, the following code was used:
 ```
 
 The “rgba” in this code stands for:
-r = red
-g = green
-b = blue
-a = alpha
+r = red,
+g = green,
+b = blue,
+a = alpha,
 
 Finally, I decided that the colours that were being generated were
 not as interesting as I could make it, so I looked into some options
