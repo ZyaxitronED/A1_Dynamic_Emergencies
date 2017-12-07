@@ -5,6 +5,22 @@
 Since I had the inspiration from the previous projects, I had a good
 idea of what I wanted to create. However, I decided to play around with
 different values and shapes to see what the best result was going to be.
+
+To begin with, I decided to have randomly generated shapes, just as a base to work off.
+After adding randomly generated rectangles, I found that they had a baseline that they were working off, and decided to use that straight line to my advantage.
+I placed the straight line on the top and bottom of the canvas, almost like a top and bottom border to the project. Then, in the centre of the project, I decided to have randomly generated circles.
+
+All of these shapes were only being placed along a certain point on the Y axis, making a line of them that were being generated. The code responsible for this was as follows (I'm using the circles as an example):
+
+```javascript
+for (var i = 0; i < 150; i++) {
+  ellipse(random(width), 290, random(150), random(150));
+}
+```
+
+The '290' value in the 'ellipse' tag is the Y axis and the position that the circles are allowed to be placed. The 'random(width)' value is placed in the X axis, meaning that they can be placed at any point from beginning to end on that axis.
+
+
 Whilst testing, I ran into a few problems. For example, implementing
 random colour generation to an ‘if’ statement would not work for me.
 I had to do some research to find out the way that worked with the ‘if’
