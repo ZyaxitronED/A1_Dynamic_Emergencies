@@ -20,7 +20,7 @@ function setup() {
 function draw() {
 
 //The 'rgba' value means that the first three values determine the colour, and the final one adds certain transparency
-  background('rgba(0, 0, 0, 0)');
+  background('rgba(0, 0, 0, 0.1)');
 //---------------------------------
 
 //To enable any of these, remove the '//' before the code. These will enable certain rotations
@@ -31,14 +31,18 @@ function draw() {
 fill(random(255), random(255), random(255));
 //----------------------------------------------
 
-//This section creates randomly generated circles at y=290
-  for (var i = 0; i < 150; i++) {
-  	ellipse(random(width), 290, random(150), random(150));
+//This section creates randomly generated lines at y=841
+  for (var i = 0; i < 15; i++) {
+    var r = random(255);
+    stroke(0);
+    line(random(width), 841, random(width), random(400-420));
   }
-//---------------------------------------------------------
+//------------------------------------------------------------
 
 //This section creates randomly generated rectangles at y=0
   for (var i = 0; i < 150; i++) {
+    noStroke();
+    blendMode(DIFFERENCE);
     rect(random(width), 0, random(150), random(150));
   }
 //----------------------------------------------------------
@@ -49,13 +53,13 @@ fill(random(255), random(255), random(255));
   }
 //-----------------------------------------------------------
 
-//This section creates randomly generated lines at y=841
-  for (var i = 0; i < 15; i++) {
-    var r = random(255);
-    stroke(0);
-    line(random(width), 841, random(width), random(400-420));
+fill(random(255), random(255), random(255));
+
+//This section creates randomly generated circles at y=290
+  for (var i = 0; i < 150; i++) {
+  	ellipse(random(width), 290, random(150), random(150));
   }
-//------------------------------------------------------------
+//---------------------------------------------------------
 
 //Changes the RGB values when the mouse is pressed
   if (mouseIsPressed) {
@@ -79,20 +83,6 @@ fill(random(255), random(255), random(255));
   ellipse(mouseX + 50, 175, random(150), random(150));
   ellipse(mouseX + 50, 425, random(150), random(150));
 //--------------------------------------------------------------
-
-//This creates a random background colour for each frame
-  function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
- console.log(bgColor);
-
-    document.body.style.background = bgColor;
-    }
-
-random_bg_color();
-//-----------------------------------------------------------
 
 }
 
