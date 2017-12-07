@@ -6,11 +6,11 @@ Since I had the inspiration from the previous projects, I had a good idea of wha
 Whilst testing, I ran into a few problems. For example, implementing random colour generation to an ‘if’ statement would not work for me. I had to do some research to find out the way that worked with the ‘if’ statement. Shown by the image below:
 
 
-"  if (mouseIsPressed) {
+  if (mouseIsPressed) {
     r = random(255);
     g = random(255);
     b = random(255);
-  }  "
+  }
 
 
 I used this for the shapes that followed the cursor on the screen. Which was used by adding in 'mouseX' and 'mouseY' to the position values, instead of static numbers.
