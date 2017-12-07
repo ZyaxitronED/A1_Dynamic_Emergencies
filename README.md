@@ -33,7 +33,7 @@ In order to do this, the following code was used:
 “background(‘rgba(0, 0, 0, 0.1)’);”
 ```
 
-The “rgba” in this code stands for”
+The “rgba” in this code stands for:
 r = red
 g = green
 b = blue
