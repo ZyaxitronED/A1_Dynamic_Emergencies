@@ -53,7 +53,7 @@ fill(random(255), random(255), random(255));
   }
 //-----------------------------------------------------------
 
-fill(random(255), random(255), random(255));
+fill(random(255), random(255), random(255)); 
 
 //This section creates randomly generated circles at y=290
   for (var i = 0; i < 150; i++) {
